@@ -9,4 +9,8 @@ module.exports = {
         endDate: '2018-11-21',
         startDate: '2018-11-12',
 
+    //Interactons
+        newInteractionName: 'Needs Help',
+        order: '1',
+        typeName: 'None',
 }

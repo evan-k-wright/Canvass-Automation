@@ -5,9 +5,9 @@
 
   <testsuite name="interactionTypes"
     errors="0" failures="0" hostname="" id="" package="interactionTypes" skipped="0"
-    tests="1" time="9.920" timestamp="Wed, 21 Nov 2018 19:23:35 GMT">
+    tests="1" time="7.164" timestamp="Wed, 21 Nov 2018 21:15:52 GMT">
   
-    <testcase name="Canvass Report" classname="interactionTypes" time="9.920" assertions="8">
+    <testcase name="Canvass Report" classname="interactionTypes" time="7.164" assertions="8">
 
     
 

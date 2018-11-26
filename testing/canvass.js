@@ -9,15 +9,20 @@ module.exports = {
         browser
     },
     
-    // 'Login': browser => {
+    // 'Login and Out': browser => {
     //     functions.loginUI(browser)
-    //     functions.login(browser, data)
+    //     functions.loginAndOut(browser, data)
     // },
 
-    'Canvass Report': browser => {
-        functions.loginUI(browser)
+    // 'Canvass Report': browser => {
+    //     functions.loginUI(browser)
+    //     functions.login(browser, data)
+    //     functions.canvassRport(browser, data)
+    // },
+
+    'Canvass Interactions': browser => {
         functions.login(browser, data)
-        functions.canvassRport(browser, data)
+        functions.canvassInteractions(browser, data)
     },
     
 }
