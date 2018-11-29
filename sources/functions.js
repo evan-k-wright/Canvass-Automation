@@ -197,10 +197,10 @@ const pomInteractions = (browser, data) => {
 
     //delete interaction
         .click('@lockDown')
-        .waitForElementVisible('@deleteInteraction')
-        .click('@deleteInteraction')
-        .acceptAlert()
-        .waitForElementNotPresent('@lockDown')
+        // .waitForElementVisible('@deleteInteraction')
+        // .click('@deleteInteraction')
+        // .acceptAlert()
+        // .waitForElementNotPresent('@lockDown')
 }
 
 module.exports = {

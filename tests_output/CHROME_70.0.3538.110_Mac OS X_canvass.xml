@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="2"
+<testsuites errors="1"
             failures="0"
             tests="1">
 
   <testsuite name="canvass"
-    errors="2" failures="0" hostname="" id="" package="canvass" skipped="0"
-    tests="1" time="27.55" timestamp="Thu, 29 Nov 2018 16:11:30 GMT">
+    errors="1" failures="0" hostname="" id="" package="canvass" skipped="0"
+    tests="1" time="25.83" timestamp="Thu, 29 Nov 2018 16:32:46 GMT">
   
-    <testcase name="Canvass Interactions" classname="canvass" time="27.55" assertions="13">
+    <testcase name="Canvass Interactions" classname="canvass" time="25.83" assertions="13">
 
     
 
@@ -39,18 +39,7 @@
 
   
     <system-err>
-      ERROR: Unable to locate element: &#34;@lockDown&#34; using: css selector
-    at Object.pomInteractions (/Users/evanwright/Desktop/VsCode/Dvlop/Canvass/sources/functions.js:199:10)
-    at Object.Canvass Interactions (/Users/evanwright/Desktop/VsCode/Dvlop/Canvass/testing/canvass.js:21:19)
-    at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
-    at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)
-    at /usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:863:30
-    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:796:13)
-    at /usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:125:13)
-Error while running waitForElementVisible command: waitForElement expects second parameter to have a global default (waitForConditionTimeout) to be specified if not passed as the second parameter 
+      ERROR: Unable to locate element: &#34;@lockDown&#34; using: xpath
     at Object.pomInteractions (/Users/evanwright/Desktop/VsCode/Dvlop/Canvass/sources/functions.js:200:10)
     at Object.Canvass Interactions (/Users/evanwright/Desktop/VsCode/Dvlop/Canvass/testing/canvass.js:21:19)
     at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
