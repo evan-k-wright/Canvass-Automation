@@ -1,7 +1,9 @@
 const properties = require('./nightwatch.props')
 module.exports = {
     "src_folders" : "testing",
-    "custon_commands_path": "customCommands",   
+    "custon_commands_path": "customCommands",  
+    "page_objects_path": "pageObjects",
+    
     "selenium" : {
       "start_process" : true,
       "server_path" : properties.resourcePath + properties.seleniumServer,

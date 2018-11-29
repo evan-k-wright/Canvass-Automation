@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="canvass"
+    errors="1" failures="0" hostname="" id="" package="canvass" skipped="0"
+    tests="1" time="0.01800" timestamp="Wed, 28 Nov 2018 23:09:03 GMT">
+  
+    <testcase name="Canvass Interactions" classname="canvass" time="0.01800" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Canvass / Canvass Interactions]:
+
+  TypeError: Cannot read property &#39;acceptAlert&#39; of undefined
+    at Object.pomInteractions (/Users/evanwright/Desktop/VsCode/Dvlop/Canvass/sources/functions.js:202:13)
+    at Object.Canvass Interactions (/Users/evanwright/Desktop/VsCode/Dvlop/Canvass/testing/canvass.js:21:19)
+    at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at /usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:863:30
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>
