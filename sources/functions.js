@@ -204,6 +204,12 @@ const pomInteractions = (browser, data) => {
         .acceptAlert()
         .useXpath()
         .waitForElementNotPresent(selectors.lockDown, 5000)
+
+        // .click('@lockDown')
+        // .waitForElementVisible('@deleteInteraction', 5000)
+        // .click('@deleteInteraction')
+        // .acceptAlert()
+        // .waitForElementNotPresent('@lockDown', 5000)
 }
 
 module.exports = {
