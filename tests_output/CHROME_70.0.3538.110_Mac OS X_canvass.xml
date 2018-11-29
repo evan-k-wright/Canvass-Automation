@@ -5,9 +5,9 @@
 
   <testsuite name="canvass"
     errors="2" failures="0" hostname="" id="" package="canvass" skipped="0"
-    tests="1" time="40.42" timestamp="Wed, 28 Nov 2018 23:09:34 GMT">
+    tests="1" time="27.55" timestamp="Thu, 29 Nov 2018 16:11:30 GMT">
   
-    <testcase name="Canvass Interactions" classname="canvass" time="40.42" assertions="13">
+    <testcase name="Canvass Interactions" classname="canvass" time="27.55" assertions="13">
 
     
 

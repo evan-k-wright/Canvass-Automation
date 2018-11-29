@@ -1,8 +1,8 @@
 module.exports = {
     //Login
         company: 'dvlop',
-        username: 'admin@dvlop.io',
-        password: 'Dvlop!',
+        username: 'evan@canvass.com',
+        password: 'Dvlop-qa',
 
     //Canvass
         repsName: 'Admin Admin',
