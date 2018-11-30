@@ -5,9 +5,9 @@
 
   <testsuite name="canvass"
     errors="0" failures="0" hostname="" id="" package="canvass" skipped="0"
-    tests="3" time="42.65" timestamp="Fri, 30 Nov 2018 18:47:38 GMT">
+    tests="3" time="43.56" timestamp="Fri, 30 Nov 2018 19:01:20 GMT">
   
-    <testcase name="Login and out" classname="canvass" time="6.529" assertions="3">
+    <testcase name="Login and out" classname="canvass" time="7.849" assertions="3">
 
     
 
@@ -16,14 +16,14 @@
     
     </testcase>
   
-    <testcase name="Canvass: Report" classname="canvass" time="4.031" assertions="2">
+    <testcase name="Canvass: Report" classname="canvass" time="5.524" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Canvass Interactions" classname="canvass" time="32.09" assertions="15">
+    <testcase name="Canvass Interactions" classname="canvass" time="30.18" assertions="15">
 
     
 
