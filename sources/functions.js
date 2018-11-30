@@ -1,87 +1,4 @@
-const selectors = require('./selectors')
-
-
-const canvassAddInteractions = (browser, data) => {
-    browser
-        .useXpath()
-        .waitForElementVisible(selectors.salesLogo, 5000)
-        .click(selectors.salesLogo)
-        .useCss()
-        .click(selectors.canvassLogo)
-        .waitForElementVisible(selectors.interactionType, 5000)
-        .click(selectors.interactionType)
-        .useXpath()
-        .waitForElementVisible(selectors.interactionTypeTitle, 5000)
-        .useCss()
-        .waitForElementVisible(selectors.addInteraction, 5000)
-        .click(selectors.addInteraction)
-        .waitForElementVisible(selectors.newInteractionName, 5000)
-        .setValue(selectors.newInteractionName, data.newInteractionName)
-        .setValue(selectors.typeName, data.typeName)
-        .click(selectors.black)
-        .click(selectors.settlingsLogo)
-        .setValue(selectors.order, data.order)
-        .click(selectors.save)
-        .useXpath()
-        .waitForElementVisible(selectors.needsHelp, 5000)
-
-}
-
-const canvassEditInteractions = (browser, data) => {
-    browser
-        .useXpath()
-        .click(selectors.needsHelp)
-        .useCss()
-        .clearValue(selectors.newInteractionName)
-        .setValue(selectors.newInteractionName, data.editName)
-        .click(selectors.red)
-        .click(selectors.lockLogo)
-        .clearValue(selectors.order)
-        .setValue(selectors.order, data.editOrder)
-        .click(selectors.save)
-        .useXpath()
-        .waitForElementVisible(selectors.lockDown, 5000)
-}
-
-const canvassDeleteInteraction = (browser) => {
-    browser
-        .click(selectors.lockDown)
-        .useCss()
-        .waitForElementVisible(selectors.deleteInteraction, 5000)
-        .click(selectors.deleteInteraction)
-        .acceptAlert()
-        .useXpath()
-        .waitForElementNotPresent(selectors.lockDown, 5000)
-}
-
-const canvassSortInteractions = (browser) => {
-    browser
-        .useXpath()
-        .waitForElementVisible(selectors.salesLogo, 5000)
-        .click(selectors.salesLogo)
-        .useCss()
-        .click(selectors.canvassLogo)
-        .waitForElementVisible(selectors.interactionType, 5000)
-        .click(selectors.interactionType)
-        .waitForElementVisible(selectors.sort, 5000)
-        .click(selectors.sort)
-        .waitForElementVisible(selectors.mainTypes, 5000)
-        .click(selectors.alreadySolar)
-        .waitForElementVisible(selectors.lgcy, 5000)
-        .waitForElementVisible(selectors.cancelButton, 5000)
-        .click(selectors.cancelButton)
-        .waitForElementVisible(selectors.sort, 5000)
-}
-
-const canvassSubInteraction = (browser, data) => {
-    browser
-        .useXpath()
-        .click(selectors.addInteraction)
-        .click(selectors.subType)
-        .setValue(selectors.newInteractionName, data.subName)
-        .setValue(selectors.typeName, data.typeName)
-
-}
+//const selectors = require('./selectors')
 
 const pageObjectLoginAndLogout = (browser, data) => {
     let loginPage = browser.page.loginPage();
@@ -191,7 +108,7 @@ const pomInteractions = (browser, data) => {
         //delete sub interaction
         .click('@toxic')
         .waitForElementVisible('@deleteInteraction', 5000)
-        .click(selectors.deleteInteraction)
+        .click('@deleteInteraction')
         .api.acceptAlert()
         canvassInteractions.waitForElementNotPresent('@toxic', 5000)
 
@@ -204,12 +121,6 @@ const pomInteractions = (browser, data) => {
 }
 
 module.exports = {
-    canvassAddInteractions: canvassAddInteractions,
-    canvassDeleteInteraction: canvassDeleteInteraction,
-    canvassEditInteractions: canvassEditInteractions,
-    canvassSortInteractions: canvassSortInteractions,
-    canvassSubInteraction,
-
     pageObjectCanvassReport: pageObjectCanvassReport,
     pageObjectLoginAndLogout: pageObjectLoginAndLogout,
     pageObjectLogin: pageObjectLogin,

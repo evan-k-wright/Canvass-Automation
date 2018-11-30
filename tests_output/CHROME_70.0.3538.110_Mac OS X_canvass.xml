@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="1">
+            tests="3">
 
   <testsuite name="canvass"
     errors="0" failures="0" hostname="" id="" package="canvass" skipped="0"
-    tests="1" time="32.51" timestamp="Fri, 30 Nov 2018 18:21:16 GMT">
+    tests="3" time="42.65" timestamp="Fri, 30 Nov 2018 18:47:38 GMT">
   
-    <testcase name="Canvass Interactions" classname="canvass" time="32.51" assertions="15">
+    <testcase name="Login and out" classname="canvass" time="6.529" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Canvass: Report" classname="canvass" time="4.031" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Canvass Interactions" classname="canvass" time="32.09" assertions="15">
 
     
 
