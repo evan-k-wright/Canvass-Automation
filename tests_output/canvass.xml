@@ -5,9 +5,9 @@
 
   <testsuite name="canvass"
     errors="1" failures="0" hostname="" id="" package="canvass" skipped="0"
-    tests="1" time="0.01800" timestamp="Wed, 28 Nov 2018 23:09:03 GMT">
+    tests="1" time="0.02000" timestamp="Fri, 30 Nov 2018 00:53:44 GMT">
   
-    <testcase name="Canvass Interactions" classname="canvass" time="0.01800" assertions="0">
+    <testcase name="Canvass Interactions" classname="canvass" time="0.02000" assertions="0">
     </testcase>
   
 
@@ -15,8 +15,8 @@
     <system-err>
         Error while running [Canvass / Canvass Interactions]:
 
-  TypeError: Cannot read property &#39;acceptAlert&#39; of undefined
-    at Object.pomInteractions (/Users/evanwright/Desktop/VsCode/Dvlop/Canvass/sources/functions.js:202:13)
+  TypeError: canvassInteractions.waitForElementNotPresent(...).click(...).waitForElementVisible(...).click(...).acceptAlert is not a function
+    at Object.pomInteractions (/Users/evanwright/Desktop/VsCode/Dvlop/Canvass/sources/functions.js:211:6)
     at Object.Canvass Interactions (/Users/evanwright/Desktop/VsCode/Dvlop/Canvass/testing/canvass.js:21:19)
     at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
     at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
